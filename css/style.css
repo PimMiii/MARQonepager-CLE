@@ -2,3 +2,16 @@ html {
     background: white;
     color: black;
 }
+
+div {
+    width: 75vw;
+    margin-inline: auto;
+    margin-top: 3vh;
+    padding: 2vw;
+    border: black 3px solid;
+    box-shadow: red 3px 9px;
+}
+
+#content div {
+    width: 50%;
+}
