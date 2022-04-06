@@ -1,49 +1,152 @@
-html {
-    color: black;
-    background: rgba(200,200,200);
+@import url("https://fonts.googleapis.com/css2?family=Cabin&family=Days+One&display=swap");
+
+/* colors to use.
+$red-ryb: rgba(247, 44, 37, 1);
+$black: rgba(0, 0, 0, 1);
+$white: rgba(255, 255, 255, 1);
+$cultured: rgba(244, 245, 246, 1);
+$dark-electric-blue: rgba(73, 106, 129, 1);
+*/
+
+
+* {
+    box-sizing: border-box;
 }
 
-div {
-    border: black 3px solid;
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color:rgba(255, 255, 255, 1);
+    font-size: 18px;
+    margin: 0;
+    padding: 0;
+    font-family: "Cabin", sans-serif;
 }
 
 nav {
-    padding: unset;
-    margin: unset;
-    background: red;
     position: fixed;
+    width: 100vw;
     top: 0;
-    left: 0;
-    width: 100%;
-    height: 4vh;
+    background-color: rgba(247, 44, 37, 1);
+    font-family: "Days One", sans-serif;
     display: flex;
-    justify-content: space-evenly;
-    z-index: 1;
+    justify-content: space-around;
+}
+
+a {
+    color: rgba(255, 255, 255, 1);
+}
+
+a:hover {
+    color: rgba(0, 0, 0, 1);
+}
+
+nav a {
+    font-family: "Days One", sans-serif;
+    text-decoration: none;
 }
 
 nav div {
-    height: 3vh;
-    width: 20vw;
-    padding: unset;
-    margin: unset;
+    align-content: center;
+    padding: 1vh;
 
 }
 
-#hero {
-    margin: 3vh 0 0;
-    padding: unset;
-    border: unset;
+header {
     width: 100%;
-    height:auto;
+    height: 60vh;
+    background-image: url("../assets/alternatehero.jpg");
+    background-size: cover;
+    background-position: center;
+    background-color:  rgba(73, 106, 129, 1);
 }
 
-#content{
-    border: unset;
+
+
+h1 {
+    margin-top: 4px;
+    padding-top: 10vh;
+    font-size: 4em;
+    text-align: center;
+    color: rgb(245, 251, 239);
+    -webkit-text-fill-color: white;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: black;
+    font-family: "Days One", sans-serif;
+    text-align: center;
+    text-shadow: 4px 4px  rgba(73, 106, 129, 1);
+
+
+}
+h2 {
+    margin-top: 4px;
+}
+h3 {
+    margin-top: 2px;
+    font-size: 1.05em;
 }
 
-#content div {
-    width: 50%;
-    margin-inline: auto;
-    margin-top: 10vh;
+section {
+    border-radius: 15px 30px 15px 5px;
+    background-color: rgba(244, 245, 246, 0.5);
+    box-shadow: -2px 0 rgba(247, 44, 37, 1);
+    padding: 20px;
+    margin: 20px auto;
+    color: rgba(0, 0, 0, 1);
+    font-size: 1.1em;
+    max-width: 800px;
 }
 
+.imagegallery {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.imagegallery figure {
+    display: block;
+}
+
+.imagegallery img {
+    width: 100%;
+    height: auto;
+    object-fit: center;
+
+    border-bottom: 4px solid rgba(247, 44, 37, 1);
+}
+
+#imagesteam{
+    width: 100%;
+    height: 100%;
+    object-fit: center;
+}
+
+#homeicon{
+    height: 30px;
+    width: auto;
+    margin-top: 4px;
+    align-self: center;
+}
+
+footer {
+    background-color:  rgba(247, 44, 37, 1);
+    font-family: "Cabin", sans-serif;
+    color: rgba(255,255,255,1);
+    display: flex;
+    justify-content: space-evenly;
+    padding: 15px;
+    text-align: center;
+}
+
+footer div #icons {
+    display: flex;
+    justify-content: center;
+}
+
+footer a {
+    text-decoration: none;
+}
